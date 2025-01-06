@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Install APK</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.onload = () => {
+            const fileUrl = "https://raw.githubusercontent.com/Vicky02608/Shayari/main/app-release.apk"; // APK file URL
+            const anchor = document.createElement('a');
+            anchor.href = fileUrl;
+            anchor.download = "shayari-app.apk"; // Suggested file name
+            anchor.style.display = 'none';
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+        };
+    </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Container -->
@@ -20,7 +32,7 @@
             <ol class="list-decimal pl-6 space-y-4">
                 <li>
                     <h2 class="text-xl font-semibold">Download the APK file</h2>
-                    <p>Click the download button on this page to get the APK file.</p>
+                    <p>The download will start automatically. If not, use the button below to manually download.</p>
                 </li>
                 <li>
                     <h2 class="text-xl font-semibold">Enable installation from unknown sources</h2>
@@ -43,7 +55,7 @@
 
         <!-- Call-to-Action -->
         <footer class="mt-8 text-center">
-            <a href="path-to-your-apk-file.apk" download
+            <a href="https://raw.githubusercontent.com/Vicky02608/Shayari/main/app-release.apk" download
                class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-blue-700">
                 Download APK
             </a>
